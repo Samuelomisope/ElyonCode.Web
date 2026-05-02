@@ -1,6 +1,6 @@
 import screenshot1 from "./assets/screenshot-1.jpg";
 import screenshot2 from "./assets/screenshot-2.jpg";
-import screenshot3 from "./assets/screenshot-3.svg";
+import screenshot3 from "./assets/screenshot-3.jpg";
 
 const stats = [
   { title: "Fast delivery", description: "Quick launch-ready websites." },
@@ -18,17 +18,20 @@ const portfolio = [
   {
     title: "Healthy Bites Co.",
     description: "Clean menu site for a local restaurant.",
-    image: screenshot1
+    image: screenshot1,
+    demoUrl: "https://elyon-healthy-bite.vercel.app"
   },
   {
-    title: "Akure Salon",
-    description: "Modern booking landing page.",
-    image: screenshot2
+    title: "ElyonCode",
+    description: "Modern business website demo.",
+    image: screenshot2,
+    demoUrl: "https://elyoncode.vercel.app"
   },
   {
-    title: "Village Market",
-    description: "Responsive storefront for a small shop.",
-    image: screenshot3
+    title: "Elyon Beauty Salon",
+    description: "Elegant salon website for a beauty business.",
+    image: screenshot3,
+    demoUrl: "https://elyon-beautysalon.vercel.app"
   }
 ];
 
@@ -172,7 +175,7 @@ function App() {
                   <h3 className="mt-4 text-xl font-semibold text-slate-950">{item.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-slate-600">{item.description}</p>
                   <a
-                    href={whatsappLink}
+                    href={item.demoUrl}
                     target="_blank"
                     rel="noreferrer"
                     className="mt-6 inline-flex items-center justify-center rounded-full bg-brand-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-brand-700"
